@@ -9,11 +9,17 @@ FinTrack is a modular Python CLI app built to track daily expenditures, monitor 
 - **Savings Projection:** Calculates compound interest earnings year-by-year.
 - **Modular Code:** Logic split cleanly across dedicated sub-modules.
 
+## Non-Functional & System Specifications
+- **Error Resilience:** Input loop wrapped in `try-except` to intercept invalid numeric types.
+- **Boundary Safety:** Explicit guards against division by zero and empty expense lists.
+- **Zero Dependencies:** Uses standard Python 3 syntax exclusively.
+- **Clean Output:** Money values formatted with f-string precision (`₹{value:.2f}`).
+
 ## File Structure
 ```text
 FinTrack-Engine/
 ├── main.py                # Main script and interactive CLI menu
-├── statement.md           # Problem statement and project scope
+├── statement.md           # Problem statement and system requirements
 ├── README.md              # Project setup and overview
 ├── modules/
 │   ├── __init__.py        # Package initialization
