@@ -1,4 +1,4 @@
-from modules.budget import calculate_remaining_budget, check_budget_status
+from modules.budget import calculate_remaining_budget, budget_status
 from modules.analytics import (
     calculate_total_expenses,
     calculate_average_expense,
