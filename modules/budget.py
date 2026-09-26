@@ -1,17 +1,16 @@
 def calculate_remaining_budget(total_income: float, total_expenses: float) -> float:
-    """Calculates remaining budget allowance."""
+    """calculates the leftover allowance"""
     return total_income - total_expenses
-
-def check_budget_status(total_income: float, total_expenses: float) -> str:
+def budget_status(total_income: float,total_expenses: float) -> str
     """Evaluates expenditure percentage against income limits."""
-    if total_income <= 0:
-        return "Invalid Income Specified"
+    if total_income <=0:
+        return "Invalid Invalid Given"
+
+    percentage = (total_expenses/total-income)*100
     
-    usage_percentage = (total_expenses / total_income) * 100
-    
-    if usage_percentage >= 100:
-        return f"CRITICAL: Budget Exceeded! ({usage_percentage:.1f}% used)"
-    elif usage_percentage >= 80:
-        return f"WARNING: Approaching Budget Limit ({usage_percentage:.1f}% used)"
+    if percentage >= 100:
+        return f"CRITICAL Budget Exceeded!({percentage :.if}% used)"
+    elif percentage >= 80:
+        return f "WARNING Approaching Budget Limit!!({percentage:.1f}% used)
     else:
-        return f"HEALTHY: Within Safe Budget Limits ({usage_percentage:.1f}% used)"
+        return f"HEALTHY within Safe Budget Limits!!!({percentage:.1f}% used)"
