@@ -24,7 +24,7 @@ def run_fintrack():
         highest_exp = find_highest_expense(expenses)
         lowest_exp = find_lowest_expense(expenses)
         remaining = calculate_remaining_budget(income, total_exp)
-        status = check_budget_status(income, total_exp)
+        status = budget_status(income, total_exp)
         
      
         print("          FINANCIAL SUMMARY")
