@@ -7,7 +7,7 @@ def budget_status(total_income: float,total_expenses: float) -> str
     percentage = (total_expenses/total-income)*100
     
     if percentage >= 100:
-        return f"CRITICAL Budget Exceeded!({percentage :.1f}% used)"
+        return f "CRITICAL Budget Exceeded!({percentage:.1f})% used)"
     elif percentage >= 80:
         return f "WARNING Approaching Budget Limit!!({percentage:.1f}% used)
     else:
