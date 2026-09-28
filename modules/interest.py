@@ -1,11 +1,13 @@
-def compute_compound_interest(principal: float, rate: float, time_years: int) -> float:
-    amount = principal
-    multiplier = 1.0 + (rate / 100.0)
+# modules/interest.py
 
-    for _ in range(time_years):
-        amount *= multiplier
+def compute_compound_interest(p: float, r: float, t: int) -> float:
+    amt = p
+    mult = 1.0 + (r / 100.0)
 
-    return amount
+    for _ in range(t):
+        amt *= mult
 
-def compute_interest_earned(principal: float, final_amount: float) -> float:
-    return final_amount - principal
+    return amt
+
+def compute_interest_earned(p: float, final_amt: float) -> float:
+    return final_amt - p
