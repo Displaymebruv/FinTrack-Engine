@@ -35,7 +35,7 @@ def run_fintrack():
         print(f"Highest Expense     : ₹{highest_exp:.2f}")
         print(f"Lowest Expense      : ₹{lowest_exp:.2f}")
         print(f"Budget Status       : {status}")
-        print("-" * 40)
+
         
         # Interest Forecast Module
         print("\n--- Savings & Compound Interest Forecaster ---")
@@ -49,7 +49,7 @@ def run_fintrack():
         print(f"\nAfter {years} years at {rate}% per annum:")
         print(f"Total Projected Savings: ₹{final_val:.2f}")
         print(f"Net Interest Earned    : ₹{earned:.2f}")
-        print("=" * 45)
+
         
     except ValueError:
         print("\n[ERROR] Invalid input! Please enter numeric values only.")
