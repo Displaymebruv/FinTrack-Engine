@@ -1,10 +1,8 @@
 def calculate_remaining_budget(total_income: float, total_expenses: float) -> float:
-    """calculates the leftover allowance"""
     return total_income - total_expenses
 def budget_status(total_income: float,total_expenses: float) -> str
-    """Evaluates expenditure percentage against income limits."""
     if total_income <=0:
-        return "Invalid Invalid Given"
+        return "Invalid Value Given"
 
     percentage = (total_expenses/total-income)*100
     
