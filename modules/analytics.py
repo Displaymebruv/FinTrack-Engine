@@ -1,28 +1,25 @@
-def calculate_total_expenses(expenses: list) -> float:
-    total = 0.0
-    for amount in expenses:
-        total += amount
-    return total
+# modules/analytics.py
 
-def calculate_average_expense(expenses: list) -> float:
-    if not expenses:
-        return 0.0
-    return calculate_total_expenses(expenses) / len(expenses)
+def calculate_total_expenses(exp: list) -> float:
+    tot = 0.0
+    for amt in exp:
+        tot += amt
+    return tot
 
-def find_highest_expense(expenses: list) -> float:
-    if not expenses:
-        return 0.0
-    highest = expenses[0]
-    for amount in expenses:
-        if amount > highest:
-            highest = amount
-    return highest
+def calculate_average_expense(exp: list) -> float:
+    if not exp: return 0.0
+    return calculate_total_expenses(exp) / len(exp)
 
-def find_lowest_expense(expenses: list) -> float:
-    if not expenses:
-        return 0.0
-    lowest = expenses[0]
-    for amount in expenses:
-        if amount < lowest:
-            lowest = amount
-    return lowest
+def find_highest_expense(exp: list) -> float:
+    if not exp: return 0.0
+    hi = exp[0]
+    for amt in exp:
+        if amt > hi: hi = amt
+    return hi
+
+def find_lowest_expense(exp: list) -> float:
+    if not exp: return 0.0
+    lo = exp[0]
+    for amt in exp:
+        if amt < lo: lo = amt
+    return lo
