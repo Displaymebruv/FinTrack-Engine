@@ -8,9 +8,7 @@ from modules.analytics import (
 from modules.interest import compute_compound_interest, compute_interest_earned
 
 def run_fintrack():
-    print("=" * 45)
     print("   FinTrack: Personal Finance Engine")
-    print("=" * 45)
     
     try:
         income = float(input("Enter your Total Monthly Income (₹): "))
@@ -28,9 +26,8 @@ def run_fintrack():
         remaining = calculate_remaining_budget(income, total_exp)
         status = check_budget_status(income, total_exp)
         
-        print("\n" + "-" * 40)
+     
         print("          FINANCIAL SUMMARY")
-        print("-" * 40)
         print(f"Total Income        : ₹{income:.2f}")
         print(f"Total Expenditure   : ₹{total_exp:.2f}")
         print(f"Remaining Allowance : ₹{remaining:.2f}")
