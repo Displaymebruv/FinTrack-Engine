@@ -1,21 +1,21 @@
 # Problem Statement & System Requirements: FinTrack
 
 ## Problem Statement
-Keeping track of daily expenses manually is messy and easy to forget. Many students end up overspending their monthly budget without realizing where the money went, leaving little to no money for savings by the end of the month. On top of that, calculating long-term savings growth using compound interest isn't straightforward without custom tools. 
+Keeping track of daily expenses manually is messy and easy to forget. Many students end up exceeding their monthly budget without realizing where the money went, leaving little to no money for savings by the end of the month. On top of that, calculating long-term savings growth using compound interest isn't straightforward without custom tools. 
 
 FinTrack is designed as a lightweight, clean command-line Python application that helps users track expenditures, monitor budget threshold limits to avoid overspending, and project savings growth using basic math algorithms.
 
 ## Scope of the Project
 FinTrack focuses on modular programming using core Python concepts (Modules 1 to 4):
-- **Expense Summaries:** Aggregates total spending, average expense per item, and finds highest/lowest expense entries.
+- **Expense Summaries:** Calculates total spending, average expense per item, and finds highest/lowest expense entries.
 - **Budget Threshold Alerts:** Evaluates total spent against monthly income and warns when spending exceeds 80% or 100% capacity.
 - **Compound Interest Forecaster:** Projects savings accumulation over time using iterative multiplication loops.
-- **Input Error Handling:** Uses basic validation to make sure invalid numeric entries don't crash the program.
+- **Input Error Handling:** Uses basic validation to make sure invalid input dose not crash the program.
 
 ## Non-Functional & Non-Technical Requirements
 
 1. **Usability & Interface:**
-   - Text output must be formatted with explicit currency indicators (₹) and formatted to two decimal places.
+   - Text output must be formatted with clear currency indicators (₹) and formatted to two decimal places.
    - Terminal prompts must clearly specify expected data types to ensure ease of use for non-technical users.
 
 2. **Reliability & Crash Prevention:**
